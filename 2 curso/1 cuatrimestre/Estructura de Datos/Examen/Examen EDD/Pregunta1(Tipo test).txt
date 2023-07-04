@@ -1,0 +1,76 @@
+
+David Martinez Diaz GII-ADE
+
+1.  La definición set <stack <int>> :: iterator p;
+(1-a) Es incorrecta porque las pilas no tienen iteradores
+(1-b) Es incorrecta porque no se puede iterar sobre un conjunto de pilas
+(1-c) Es incorrecta porque no puede definirse un conjunto de pilas
+(1-d) Es correcta
+
+Razona la respuesta:
+
+La respuesta correcta es la 1-d:
+
+Ya que este enrealidad es un iterador sobre un set, donde cada valor del set es un stack,
+que estos no tienen iterador, sin embargo el set si, por lo que podemos recorrer sin ningun
+problema el set de stacks.
+
+---------------------------------------------------------------------------------
+
+2. Dados los siguientes recorridos Preorden y Postorden:
+
+ Pre = {A,Z,W,X,Y,T,R,Q,V,L}.
+ Post = {Z,W,X,R,Y,Q, V,L,T,A}.
+
+(2-a) Hay exactamente 2 árboles binarios con esos recorridos
+(2-b) No hay ningún árbol binario con esos recorridos
+(2-c) Hay exactamente 1 árbol binario con esos recorridos
+(2-d) Hay más de 2 árboles binarios con esos recorridos
+
+Razona la respuesta
+
+La respuesta es 2-b:
+
+Con recorrido preorden y postorden no se puede hacer un arbol de manera univoca, por lo que
+a la hora de construirlo no se podria elaborar dicho arbol, por lo que no hay ningun arbol con ese
+recorrido.
+
+
+
+-----------------------------------------------------------------------------------
+
+3. Supongamos que hacemos las 3 siguientes afirmaciones:
+
+(a) En un esquema de hashing puede usarse como función hash h(x)=M - (x% M) con
+M primo.
+
+(b) Si insertamos un conjunto de enteros ordenados en un AVL y en un APO, la altura
+de ambos es la misma.
+
+(c) El orden relativo en que las hojas se listan en los recorridos preorden, inorden
+y postorden de un APO es el mismo en los 3 casos
+
+	3-a: Las tres son ciertas 
+	3-b: Dos son ciertas y una falsa 
+	3-c: Dos son falsas y una cierta;
+	3-d: Las tres son falsas.
+
+Razona la respuesta.
+
+
+La respuesta seria la 3-b:
+
+
+Ya que función la a es falsa porque la funcion hash h(x)= M - (x% M), tendria el problema
+de que se saldria del rango [0, M-1].
+
+Por otro lado, tenemos que la b es cierta ya que si lo comprobamos, a la hora de ir insertando
+se van ajustando ya sea con los nodos cambiados de lugar pero siempre en el mismo nivel.
+
+Y por ultimo, la c es verdadera, ya que con cualquier recorrido ya sea preorden, inorden
+o postorden, se listan de izquierda a derecha.
+
+
+
+
+

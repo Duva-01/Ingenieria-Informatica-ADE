@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Indicamos que es un archivo html  -->
+
+<html>
+
+    <!-- Indicamos la cabecera, donde se encuentran los elemntos mas importantesl  -->
+    <head>
+        <title>Practica 1</title>
+
+        <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <!-- El cuerpo de nuestra pagina web -->
+    <body>
+
+        <!-- Esto empieza a subidividir la pagina, y va creando contenedores mas estructurados-->
+        <header>
+            <div id="Logo"><img src="images/duck.png" id="logoImg"></div>
+
+            <div id="contenidoCabecera">
+                <div id="Titulo"><h1>La cabecera de la pagina</h1></div>
+                <nav id="menuCabecera">
+
+                    <a href="index.html" class="Inicio">Menu 1</a>
+                    <a href="Paths/ProyectsPage.html">Menu 2</a>
+                    <a href="Paths/numero_secreto.html">Menu 3</a>
+        
+                </nav>
+
+            </div>
+            
+        </header>
+
+        <div class="wrapper">
+
+            <div class="Cuerpo">One</div>
+
+            <div class="ElementosAuxiliares">Two</div>
+
+        </div>
+        
+        <!-- Vamos a añadir una seccion -->
+        <nav>
+            <!-- Vamos a utilizar enlaces, utilizando la etiqueta <a>
+                tiene un atributo obligatorio, es href 
+                Parametro target=> Nos crea una nueva pestaña en blanco con el enlace-->
+
+            <a href="https://www.ugr.es" target="_blank">Esto es un enlace</a>
+            
+            <!-- <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=400:*" alt="Hola yo era una foto de un patoz"> -->
+            
+            <a href="https://www.ugr.es" target="_blank"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=400:*" alt="Hola yo era una foto de un patoz"></a>
+        </nav>
+
+        <!-- Vamos a declara el pie de nuestra pagina -->
+        <footer> David Martinez Diaz © 2023 </footer>
+    </body>
+
+</html>
+
+

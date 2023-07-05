@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.cppStandard" : "c++11",
+
+    "cmake.configureOnOpen"     : false,
+    "cmake.configureOnEdit"     : false,
+    "makefile.configureOnOpen"  : false,
+    "makefile.configureOnEdit"  : false
+}

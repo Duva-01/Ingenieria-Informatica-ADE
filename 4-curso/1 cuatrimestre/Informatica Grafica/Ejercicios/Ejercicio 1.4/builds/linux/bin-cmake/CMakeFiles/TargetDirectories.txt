@@ -1,0 +1,3 @@
+/home/federico/Documents/Prácticas/IG/opengl3-minimo/builds/linux/bin-cmake/CMakeFiles/main_linux_exe.dir
+/home/federico/Documents/Prácticas/IG/opengl3-minimo/builds/linux/bin-cmake/CMakeFiles/edit_cache.dir
+/home/federico/Documents/Prácticas/IG/opengl3-minimo/builds/linux/bin-cmake/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,33 @@
+{
+  "folders":
+  [ { "name": "IG BUILD (macOS)",
+      "path": "."
+    },
+    { "name": "MATERIALES",
+      "path": "../../materiales"
+    },
+    { "name": "FUENTES",
+      "path": "../../src"
+    }
+  ],
+
+  "settings" :
+  {
+    "C_Cpp.default.cppStandard" : 
+      "c++11",
+
+    "C_Cpp.default.includePath" : 
+      [ 
+        "${workspaceFolder:MATERIALES}/src-cpp" ,
+        "${workspaceFolder:FUENTES}",
+        "/usr/local/include",                              
+        "/usr/local/Cellar/jpeg/9e/include",
+        "/usr/local/Cellar/glfw/3.3.4/include"
+      ],
+    
+      "cmake.configureOnOpen"    : false,
+      "cmake.configureOnEdit"    : false,
+      "makefile.configureOnOpen" : false,
+      "makefile.configureOnEdit" : false
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "configurations": 
+    [
+        {
+            "name"            : "Depurar/ejecutar con GDB en Linux (CUA)",
+            "type"            : "cppdbg",
+            "MIMode"          : "gdb",
+            "request"         : "launch",
+            "externalConsole" : true,
+            "program"         : "${workspaceFolder}/cmake/pracs_ig_linux_exe",
+            "cwd"             : "${workspaceFolder}/cmake/"
+            
+        }
+    ]
+}

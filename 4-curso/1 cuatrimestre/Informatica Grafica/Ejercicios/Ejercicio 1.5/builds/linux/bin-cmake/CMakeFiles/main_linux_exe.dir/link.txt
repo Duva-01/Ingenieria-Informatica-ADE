@@ -1,0 +1,1 @@
+/usr/bin/c++         -g -std=c++11 -Wall -Wfatal-errors -Wno-deprecated-declarations CMakeFiles/main_linux_exe.dir/home/federico/Documents/Prácticas/IG/Ejercicios_IG/Ejercicio_1.5/src/main.cpp.o -o main_linux_exe   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lglfw -ljpeg -lGLEW -lGL 

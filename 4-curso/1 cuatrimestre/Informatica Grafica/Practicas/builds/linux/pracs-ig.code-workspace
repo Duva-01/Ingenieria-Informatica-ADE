@@ -1,0 +1,29 @@
+{
+  "folders":
+  [ { "name": "IG BUILD (Linux)",
+      "path": "."
+    },
+    { "name": "MATERIALES",
+      "path": "../../materiales"
+    },
+    { "name": "FUENTES",
+      "path": "../../src"
+    }
+  ],
+
+  "settings" :
+  {
+    "C_Cpp.default.cppStandard" : "c++11",
+    "C_Cpp.default.includePath" : 
+    [
+        "../../materiales/src-cpp",
+        "../../src",
+        "/usr/local/include/"
+    ],
+
+    "cmake.configureOnOpen"     : false,
+    "makefile.configureOnOpen"  : false,
+    "cmake.configureOnedit"     : false,
+    "makefile.configureOnedit"  : false 
+  }
+}

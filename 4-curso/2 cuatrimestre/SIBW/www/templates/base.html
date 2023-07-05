@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- Indicamos que es un archivo html  -->
+
+<html>
+
+    <!-- Indicamos la cabecera, donde se encuentran los elemntos mas importantesl  -->
+    <head>
+        <title>{% block titulo %}SIBW{% endblock %}</title>
+
+        <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+        <link href="css/styles_principal.css" rel="stylesheet" type="text/css">
+        <base href="http://localhost/">
+    </head>
+
+    <!-- El cuerpo de nuestra pagina web -->
+    <body>
+
+        <!-- Esto empieza a subidividir la pagina, y va creando contenedores mas estructurados-->
+        <header>
+
+            <div id="Logo"><img src="images/science.png"></div>
+            
+            <section id="contenidoCabecera">
+                
+                <div id="Titulo"><h1>{% block header %}Los científicos más famosos{% endblock %} </h1></div>
+                
+                <nav id="menuCabecera">
+
+                    <a href="./index.php" class="Menu">Principal</a>
+                    <a href="./cientifico.php?scid=1" class="Menu">Cientifico</a>
+                    <a href="./cientifico_imprimir.html" class="Menu">Imprimir</a>
+        
+                </nav>
+
+            </section>
+
+            <div class="sesionUsuario">
+
+                <form action="sesionUsuarios/adminSesion.php" method="post" enctype="multipart/form-data">
+                    
+                    {% if usuario %}
+                        <p>Bienvenido: <strong>{{ usuario.usuario }}</strong></p>
+                        <p>Rol: <strong>{{ usuario.rol }}</strong></p>
+    
+                        <p><a href="sesionUsuarios/cerrarSesion.php">Cerrar Sesion</a></p>
+
+                    {% else %}
+
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+        
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" required>
+
+                        <input type="submit" name="iniciarSesion" value="Iniciar sesión">
+
+                    {% endif %}
+    
+                </form>
+    
+            </div>
+
+            {% if usuario == null %}
+
+                <div class="sesionUsuario">
+
+                    <form action="sesionUsuarios/adminSesion.php" method="post" enctype="multipart/form-data">
+
+                        <label for="usuarioR">Usuario:</label>
+                        <input type="text" id="usuarioR" name="usuarioR" required>
+                        
+                        <label for="correoR">Correo:</label>
+                        <input type="text" id="correoR" name="correoR" required>
+
+                        <label for="contraseñaR">Contraseña:</label>
+                        <input type="password" id="contraseñaR" name="contraseñaR" required>
+        
+                        <input type="submit" name="registrar" value="Registrarse">
+        
+                    </form>
+        
+                </div>
+
+            {% endif %}
+
+        </header>
+
+        {% block principal %}
+            <p>Contenido bloque principal</p>
+        {% endblock %}
+
+        {% if usuario %}
+        
+            <section id="modificarUsuario">
+
+                <h2>Modificar mis datos personales: </h2>
+                <form action="sesionUsuarios/adminSesion.php" method="post" enctype="multipart/form-data">
+
+                    <label for="usuarioM">Usuario:</label>
+                    <input type="text" id="usuarioM" name="usuarioM" value="{{usuario.usuario}}" readonly required>
+                    
+                    <label for="correoM">Correo:</label>
+                    <input type="text" id="correoM" name="correoM" required>
+
+                    <label for="contraseñaM">Contraseña:</label>
+                    <input type="password" id="contraseñaM" name="contraseñaM">
+
+                    <input type="submit" name="modificar" value="Modificar">
+
+                </form>
+
+            </section>
+
+        {% endif %}
+            
+        {% if usuario.rol == "Super-admin" %}
+
+            <section id="modificarUsuario">
+
+                <h2>Modificar rol usuarios (Super-admin): </h2>
+                <form action="sesionUsuarios/adminSesion.php" method="post" enctype="multipart/form-data">
+
+                    <label for="usuarioRol">Usuario:</label>
+                    <input type="text" id="usuarioRol" name="usuarioRol" required>
+                    
+                    <label for="rol">Rol:</label>
+                    <input type="text" id="rol" name="rol" required>
+
+                    <input type="submit" name="eliminarRol" value="Eliminar Rol">
+                    <input type="submit" name="añadirRol" value="Añadir Rol">
+
+                </form>
+
+            </section>
+
+        {% endif %}
+
+        <!-- Vamos a declara el pie de nuestra pagina -->
+        <footer> <h3>David Martinez Diaz © 2023</h3> </footer>
+    </body>
+
+</html>
+
+

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+{{ parent() }} - {{ cientifico.nombre }}
+{% endblock %}
+
+{% block header %}Seccion administrativa{% endblock %}
+
+{% block principal %}
+
+<head>
+
+    <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+    <link href="/css/styles_principal.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles_cientifico.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles_cientifico_modificar.css" rel="stylesheet" type="text/css">
+
+</head>
+
+{% if usuario.rol == "Super-admin" or usuario.rol == "Gestor" %}
+
+<section id="seccionAdminModificarComentarios">
+
+    <h2>(Solo administrador y moderador) Modificar comentario</h2>
+
+    <form id="formularioModificarComentarios" action="../administracion/adminComentarios.php" method="post"
+        enctype="multipart/form-data">
+        <div id="formularioComentarioCampos">
+
+            <input type="hidden" id="idCientificoComentarioM" name="idCientificoComentarioM" value="{{cientifico.id}}"
+                readonly required>
+            <input type="hidden" id="idComentarioM" name="idComentarioM" value="{{comentario.id}}" readonly required>
+
+            <label for="nombreComentarioM">Nombre:</label>
+            <input type="text" id="nombreComentarioM" name="nombreComentarioM" value="{{comentario.nombre}}"
+                required><br>
+
+            <label for="emailComentarioM">E-mail:</label>
+            <input type="text" id="emailComentarioM" name="emailComentarioM" value="{{comentario.email}}" required>
+            <br>
+
+            <label for="fechaComentarioM">Fecha:</label>
+            <input type="date" id="fechaComentarioM" name="fechaComentarioM" value="{{comentario.fecha}}"><br>
+
+        </div>
+
+        <div id="formularioTextoComentario">
+            <label for="textoComentarioM">Texto comentario:</label>
+            <textarea id="textoComentarioM" name="textoComentarioM" rows="30"
+                cols="30">{{comentario.comentario}}</textarea><br>
+        </div>
+
+        <input class="botonAdminCientifico" type="submit" name="modificarComentario" value="Modificar Comentario">
+
+    </form>
+
+</section>
+
+
+<div id="listaCientificosFiltrados">
+    <h2>Busqueda de comentarios</h2>
+
+    <form class="formularioBusquedaComentarios" action="../administracion/adminComentarios.php" method="post"
+        enctype="multipart/form-data">
+
+        <strong> Buscar:</strong>
+        <input type="text" id="filtroComentario" name="filtroComentario" placeholder="Buscar comentarios..."><br><br>
+        <input type="submit" name="busquedaComentarios" value="Buscar Comentarios">
+
+    </form>
+    <h2>Listado de comentarios</h2>
+    <ul>
+        {% for coment in lista_comentarios_filtrados %}
+        <div class="comentarioAdmin">
+            <h3>{{coment.nombre}} {{coment.email}} {{coment.fecha}}</h3>
+            <p>{{coment.comentario}}</p>
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{% endif %}
+
+{% endblock %}

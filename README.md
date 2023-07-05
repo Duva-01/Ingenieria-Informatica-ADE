@@ -14,6 +14,9 @@ Aquí les presento una recopilación de los **trabajos prácticos**, **evaluacio
 
 **Si eres el propietario de algún material y deseas que lo retire no dudes en escribirme al correo que aparece en mi biografía.**
 
+Ademas os dejo un excel comunitario con informacion extra sobre las asignaturas y profesores del doble grado:
+https://docs.google.com/spreadsheets/d/1A_Wdfor4E7u4S4n-gytvsSNygODt_RdpslfmXEqVYd8/edit#gid=943505333
+
 Permítanme describirles brevemente las asignaturas que he cursado hasta ahora:
 
 ## Primer Curso

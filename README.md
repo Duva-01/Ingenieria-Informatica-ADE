@@ -51,6 +51,51 @@ En este doble grado, tengo la oportunidad de sumergirme en un plan de estudios q
 - **Álgebra Lineal y Estructuras Matemáticas (INF)**
    Durante esta asignatura, estudié los fundamentos del álgebra lineal y las estructuras matemáticas. Exploré conceptos como matrices, sistemas de ecuaciones lineales y espacios vectoriales, lo cual me proporcionó una base sólida para abordar problemas matemáticos complejos y su aplicación en la informática.
 
+## Segundo Curso
+
+### Primer Cuatrimestre
+
+- **Introducción al Marketing (ADE)**
+   Durante esta asignatura, explorarás los fundamentos del marketing y su aplicación en el entorno empresarial. Aprenderás sobre la segmentación de mercado, el análisis de la demanda, las estrategias de precios y promoción, adquiriendo conocimientos esenciales para comprender y desarrollar estrategias de marketing efectivas.
+
+- **Introducción a las Operaciones Financieras (ADE)**
+   En esta asignatura, te familiarizarás con los conceptos básicos de las operaciones financieras en el entorno empresarial. Estudiarás temas como la valoración de activos, el análisis de inversiones, el financiamiento y la gestión de riesgos, adquiriendo habilidades fundamentales para la toma de decisiones financieras.
+
+- **Macroeconomía (ADE)**
+   Durante el desarrollo de esta asignatura, profundizarás en la teoría de la macroeconomía. Analizarás los determinantes del crecimiento económico, el comportamiento del empleo y la inflación, la política monetaria y fiscal, comprendiendo cómo se interrelacionan estos aspectos en el funcionamiento de la economía a nivel macro.
+
+- **Técnicas Cuantitativas I (ADE)**
+   En esta asignatura, desarrollarás habilidades cuantitativas aplicadas al análisis de datos en el entorno empresarial. Utilizarás herramientas estadísticas y matemáticas para analizar información, realizar pronósticos y tomar decisiones basadas en datos, lo cual te permitirá abordar problemas empresariales de manera más fundamentada.
+
+- **Estructura de Datos (INF)**
+   Durante esta asignatura, profundizarás en el estudio de las estructuras de datos y su aplicación en la programación. Explorarás conceptos como listas, pilas, colas, árboles y grafos, adquiriendo conocimientos fundamentales para organizar y manipular grandes volúmenes de datos de manera eficiente.
+
+- **Estructura de los Computadores (INF)**
+   En esta asignatura, estudiarás la estructura interna de los computadores y los principios de diseño de hardware. Analizarás la arquitectura de los procesadores, la memoria y los sistemas de entrada/salida, comprendiendo cómo se organizan y se comunican los componentes en un sistema informático.
+
+- **Sistemas Operativos (INF)**
+   Durante esta asignatura, profundizarás en los sistemas operativos y su papel en la gestión de los recursos de un sistema informático. Aprenderás sobre la administración de procesos, la gestión de memoria, el sistema de archivos y la comunicación entre procesos, adquiriendo habilidades fundamentales para el desarrollo y la administración de sistemas informáticos.
+
+### Segundo Cuatrimestre
+
+- **Contabilidad General (ADE)**
+   Durante esta asignatura, te adentrarás en los principios contables y su aplicación en el registro y análisis de la información financiera de las empresas. Estudiarás los estados financieros, los principios de contabilidad y las técnicas de análisis, adquiriendo habilidades esenciales para la gestión financiera.
+
+- **Dirección Comercial (ADE)**
+   En esta asignatura, explorarás los fundamentos de la dirección comercial y la gestión de ventas en el entorno empresarial. Aprenderás sobre la gestión de clientes, la planificación de ventas, las estrategias de distribución y la gestión de canales de marketing, adquiriendo conocimientos cruciales para el éxito en la función comercial de una empresa.
+
+- **Técnicas Cuantitativas II (ADE)**
+   Durante el desarrollo de esta asignatura, profundizarás en las técnicas cuantitativas aplicadas al análisis y la toma de decisiones empresariales. Utilizarás herramientas estadísticas más avanzadas, modelos matemáticos y técnicas de optimización, adquiriendo habilidades para el análisis y la resolución de problemas complejos en el entorno empresarial.
+
+- **Lógica y Métodos Discretos (INF)**
+   En esta asignatura, estudiarás los fundamentos de la lógica y los métodos discretos en la informática. Explorarás la lógica proposicional, los conjuntos, las relaciones y las funciones, adquiriendo conocimientos esenciales para el razonamiento lógico y la resolución de problemas en el ámbito de la computación.
+
+- **Algorítmica (INF)**
+   Durante esta asignatura, profundizarás en los conceptos de diseño y análisis de algoritmos. Aprenderás técnicas para resolver problemas computacionales de manera eficiente y desarrollarás habilidades en el diseño de algoritmos, su implementación y análisis de su complejidad.
+
+- **Arquitectura de Computadores (INF)**
+   En esta asignatura, estudiarás la arquitectura de los computadores y los principios de diseño de hardware a un nivel más avanzado. Analizarás aspectos como la jerarquía de memoria, los sistemas de entrada/salida avanzados y las arquitecturas paralelas, comprendiendo cómo se diseñan y optimizan los sistemas informáticos más complejos.
+
 Estas asignaturas son solo el comienzo de mi emocionante viaje académico. A medida que avance en mi carrera, profundizaré en temas más avanzados y específicos en ambos campos de estudio. Estoy convencido de que esta combinación de conocimientos en ingeniería informática y administración y dirección de empresas me proporcionará una base sólida para enfrentar los desafíos del mundo empresarial y tecnológico actual.
 
 ¡Estoy emocionado por todo lo que voy a aprender y las oportunidades que me esperan en el camino! Estaré encantado de compartir mi progreso y conocimientos a medida que continúo en este apasionante viaje. ¡Acompáñenme en esta emocionante aventura!

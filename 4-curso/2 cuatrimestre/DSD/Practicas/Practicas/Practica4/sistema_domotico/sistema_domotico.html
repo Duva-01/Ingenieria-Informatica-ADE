@@ -1,0 +1,286 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/servidor.css">
+    <title>Casa con sistema domotico</title>
+</head>
+
+<header>
+    <h1>Servidor con Sistema Domotico</h1>
+</header>
+
+<body>
+
+    <main>
+
+        <h1>Modificacion de Sensores</h1>
+
+        <p>Recordar que cuando la temperatura o la luminosidad excede el valor de 100, se llamaran a los controladores respectivos para regular dichos valores.</p>
+        <form action="javascript:void(0);" onsubmit="javascript:enviar();">
+            Temperatura (°C): <input type="number" id="inputTemperatura" /> <br/>
+            Luminosidad: <input type="number" id="inputLuminosidad" /> <br/>
+            <input type="submit" value="Aplicar valores" />
+        </form>
+        
+        <div id="resultadosActuales">
+
+            <h2>Valores actuales</h2>
+
+            <p>Temperatura actual: <span id="valorTemperatura"></span> (°C)</p>
+            <progress id="barraTemperatura" value="0" min="-100" max="100"></progress>
+            <p>Luminosidad actual: <span id="valorLuminosidad"></span></p>
+            <progress id="barraLuminosidad" value="0" min="-100" max="100"></progress>
+
+        </div>
+        
+        <div id="estadoDispositivos">
+
+            <h2>Estado dispositivos</h2>
+
+            <p>Estado persiana ==><span id="sensorPersiana" style="color: red">CERRADA</span></p></br>
+            <p>Estado aire acondicionado ==> <span id="sensorAire" style="color: red">APAGADO</span></p></br>
+            
+            <div id="infoAlertas">
+
+                <p>Informacion sobre los dispositivos: <span id="alerta"></span></p>
+                <p>Mensajes de servicio: <span id="mensaje_servicio" style="color: red;"></span> <br /></p>
+            </div>
+            
+            <div id="infoAlertas">
+                <p>Estados Complejos: <span id="alertaCompleja"></span></p>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <section id="seccionHistorial">
+
+        <nobr>
+            <h1>Historial de cambios en los sensores</h1>
+
+            <div id="historial"></div>
+            <form action="javascript:void(0);" onsubmit="javascript:borrarHistorial();">
+                <input type="submit" value="Borrar registro" />
+            </form>
+        </nobr>
+        
+    </section>
+    
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+
+    var serviceURL = document.URL;
+    var socket = io.connect(serviceURL);
+
+    var estadoPersiana = 0;
+    var estadoAire = 0;
+
+    
+
+    function enviar() {
+
+        // Obtengo los valores actuales de los sensores
+        console.log("Le doy al boton de enviar");
+        var t = new Date();
+        var inputTemperatura = document.getElementById("inputTemperatura").value;
+        var inputLuminosidad = document.getElementById("inputLuminosidad").value;
+
+        console.log("TEMPERATURA ACTUALIZADO: " + inputTemperatura);
+        console.log("LUMINOSIDAD ACTALIZADO: " + inputLuminosidad);
+
+        // Les paso la informacion para almacenar en la BD
+        socket.emit('obtener-sensores', { temperatura: inputTemperatura, luminosidad: inputLuminosidad, tiempo: t });
+        
+        // Actualizo los datos
+        socket.emit('obtener-medidas');
+    }
+
+    function borrarHistorial() {
+        socket.emit('borrar-historial');
+    }
+
+    function mostrarMedidas(msg) {
+
+        // Obtengo las barras del html
+        var barraTemperatura = document.getElementById("barraTemperatura");
+        var barraLuminosidad = document.getElementById("barraLuminosidad");
+
+        // Obtengo donde van los valores de las variables
+        var temperatura = document.getElementById('valorTemperatura');
+        var luminosidad = document.getElementById('valorLuminosidad');
+
+        //----------------------------------------------//
+
+        // Les añado el valor obtenido de los sensores registrados
+        temperatura.innerHTML = msg.temperatura;
+        luminosidad.innerHTML = msg.luminosidad;
+
+        barraTemperatura.value = msg.temperatura;
+        barraLuminosidad.value = msg.luminosidad;
+
+    }
+
+    function actualizarHistorial(historial) {
+
+        // Encuentro el contendor donde se muestra el historial
+        var listaHistorial = document.getElementById('historial');
+        listaHistorial.innerHTML = '';
+
+        // Me creo un scroll donde voy a ir añadiendo todos los datos
+        var listElement = document.createElement('ul');
+        listElement.style.overflowY = "scroll";
+        listElement.style.height = "50%";
+
+        // Añado el scroll a mi contenedor del historial
+        listaHistorial.appendChild(listElement);
+
+        // Obtengo la longitud de registros y voy añadiendolos uno a uno
+        var num = historial.length;
+
+        for (var i = 0; i < num; i++) {
+
+            var listItem = document.createElement('li');
+            listItem.innerHTML = "<table class='table-style'><tr><td><strong>Temperatura:</strong></td><td>" + historial[i].temperatura + "</td></tr>"
+                + "<tr><td><strong>Luminosidad:</strong></td><td>" + historial[i].luminosidad + "</td></tr>"
+                + "<tr><td><strong>Tiempo:</strong></td><td>" + historial[i].tiempo + "</td></tr></table>";
+
+            listElement.appendChild(listItem);
+        }
+    }
+
+    socket.on('info-alertas', function (alerta, data) {
+        
+        // Obtengo el contenedor donde mostrare las alertas detectadas por el agente automatico
+        var alertaHtml = document.getElementById("alerta");
+        alertaHtml.innerHTML = alerta;
+        
+        // Si empieza por L, tengo puesto el mensaje de que todo funciona correctamente sino se mostrara en rojo.
+        if (alerta[0] != 'L') {
+            alertaHtml.style.color = '#FF0000';
+        } else {
+            alertaHtml.style.color = '#1f7507';
+        }
+        
+        // Actualizamos las medidas
+        mostrarMedidas(data);
+    });
+
+    socket.on('alerta-compleja', function (alerta) {
+        
+        // Obtengo el contenedor donde mostrare las alertas detectadas por el agente automatico
+        var alertaComplejaHtml = document.getElementById("alertaCompleja");
+        alertaComplejaHtml.innerHTML = alerta;
+
+        alertaComplejaHtml.style.color = '#1f7507';
+    });
+
+    socket.on('apaga-aire', function () {
+        
+        // Obtengo el sensor
+        var aireAcondicionado = document.getElementById("sensorAire");
+
+        // Si esta apagado/cerrado lo muestro en rojo
+        aireAcondicionado.innerHTML = "A.C Apagado";
+        aireAcondicionado.style.color = '#FF0000';
+        aireAcondicionado.style.backgroundColor = '#ff7e73';
+
+        // Modifico su valor debido a que cierro/apago el controlador
+        var temperatura = document.getElementById("inputTemperatura").value;
+        document.getElementById("inputTemperatura").value = parseInt(temperatura) + Math.round((Math.random()) * 5 * 100) / 100;
+
+        estadoAire = 0;
+        
+        socket.emit('estado-controladores', {estadoAire: estadoAire, estadoPersiana: estadoPersiana});
+        // Envio las medidas actualizadas
+        enviar();
+    });
+
+    socket.on('enciende-aire', function () {
+
+        // Obtengo el sensor
+        var aireAcondicionado = document.getElementById("sensorAire");
+        
+        // Si esta encendido/abierto lo muestro en verde
+        aireAcondicionado.innerHTML = "A.C Encendido";
+        aireAcondicionado.style.color = '#00FF00';
+        aireAcondicionado.style.backgroundColor = '#bbffa8';
+
+        // Modifico su valor debido a que enciendo/abro el controlador
+        var temperatura = document.getElementById("inputTemperatura").value;
+        document.getElementById("inputTemperatura").value = parseInt(temperatura) - Math.round((Math.random()) * 5 * 100) / 100;
+
+        estadoAire = 1;
+        
+        socket.emit('estado-controladores', {estadoAire: estadoAire, estadoPersiana: estadoPersiana});
+
+        // Enviar medidas actualizadas
+        enviar();
+    });
+
+
+    socket.on('cierra-persiana', function () {
+
+        // Obtengo el sensor
+        var persiana = document.getElementById("sensorPersiana");
+
+        // Si esta apagado/cerrado lo muestro en rojo
+        console.log("Cierro la persiana");
+        persiana.innerHTML = "CERRADA";
+        persiana.style.color = '#FF0000';
+        persiana.style.backgroundColor = '#ff7e73';
+
+        // Modifico su valor debido a que cierro/apago el controlador
+        var luminosidad = document.getElementById("inputLuminosidad").value;
+        document.getElementById("inputLuminosidad").value = parseInt(luminosidad) - Math.round((Math.random()) * 5 * 100) / 100;
+
+        estadoPersiana = 0;
+        
+        socket.emit('estado-controladores', {estadoAire: estadoAire, estadoPersiana: estadoPersiana});
+
+        // Enviar medidas actualizadas
+        enviar();
+    });
+
+    socket.on('abre-persiana', function () {
+        
+        // Obtengo el sensor
+        var persiana = document.getElementById("sensorPersiana");
+
+        // Si esta encendido/abierto lo muestro en verde
+        console.log("Abro la persiana");
+        persiana.innerHTML = "ABIERTA";
+        persiana.style.color = '#00FF00';
+        persiana.style.backgroundColor = '#bbffa8';
+
+        // Modifico su valor debido a que cierro/apago el controlador
+        var luminosidad = document.getElementById("inputLuminosidad").value;
+        document.getElementById("inputLuminosidad").value = parseInt(luminosidad) + Math.round((Math.random()) * 5 * 100) / 100;
+
+        estadoPersiana = 1;
+        
+        socket.emit('estado-controladores', {estadoAire: estadoAire, estadoPersiana: estadoPersiana});
+
+        // Enviar medidas actualizadas
+        enviar();
+    });
+
+    
+    socket.on('medidas-casa', function (data) {
+        mostrarMedidas(data);
+    });
+
+    socket.on('obtener-medidas', function (data) {
+        actualizarHistorial(data);
+    });
+
+    socket.on('disconnect', function () {
+        var span_msg = document.getElementById('mensaje_servicio');
+        span_msg.innerHTML = msg;
+    });
+</script>
+
+</html>

@@ -1,0 +1,153 @@
+header {
+    background-color: rgb(111, 215, 201);
+    height: max-content;
+    border-radius: 2em 2em 2em 2em;
+
+    align-items: center;
+    text-align: center;
+    border: 3px solid  rgb(8, 69, 8);
+}
+
+main {
+     
+    background-color: rgb(168, 249, 238);
+   
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #mensaje_servicio {
+    color: red;
+  }
+  
+  #inputTemperatura, #inputLuminosidad {
+    margin: 4px;
+  }
+
+  #valorTemperatura,
+  #valorLuminosidad {
+    font-weight: bold;
+  }
+  
+  #sensorPersiana,
+  #sensorAire {
+
+
+    background-color: #ff7e73;
+   
+    border: 3px solid  rgb(8, 69, 8);
+
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  #alerta {
+    font-weight: bold;
+  }
+  
+  #seccionHistorial{
+
+    background-color: rgb(168, 249, 238);
+   
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #resultadosActuales,
+#estadoDispositivos {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(207, 248, 242);
+}
+
+#infoAlertas {
+     
+    background-color: rgb(255, 224, 88);
+   
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#historial {
+
+  background-color: rgb(84, 235, 255);
+  border: 3px solid  rgb(0, 0, 0);
+  align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.table-style {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.table-style td, .table-style th {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-style th {
+  background-color: #00847f;
+}
+
+.table-style tr:nth-child(even) {
+  background-color: #7dfffd;
+}

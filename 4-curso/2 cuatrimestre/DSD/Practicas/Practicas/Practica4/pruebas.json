@@ -1,0 +1,7 @@
+{
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 30,
+    "email": "juan.perez@example.com",
+    "telefono": "555-1234"
+  }

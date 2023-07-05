@@ -1,0 +1,86 @@
+#Ejercicio 18 - Relacion 1
+
+class Asignatura
+
+  attr_accessor :codigo
+  def initialize(el_nombre, el_codigo)
+    @nombre=el_nombre
+    @codigo=el_codigo
+  end
+
+  def getCodigo
+    @codigo
+  end
+
+  def equals(otra_Asignatura)
+    if @codigo == otra_Asignatura.codigo
+      true
+    else
+      false
+    end
+  end
+
+end
+
+class Matricula
+
+  attr_accessor :cursoAcademico
+  attr_accessor :asignaturas
+  def initialize(el_cursoAcademico, *las_asignaturas)
+
+    @cursoAcademico=el_cursoAcademico
+    @asignaturas=las_asignaturas
+
+  end
+
+  def equals(otra_Matricula)
+
+    var=0
+    check=true
+    if @cursoAcademico == otra_Matricula.cursoAcademico
+
+      for i in @asignaturas do
+        if !(i.equals(otra_Matricula.asignaturas))
+          check=false
+        end
+      end
+    end
+    check
+  end
+
+end
+
+#-------------------------------------------------------------------------------
+#
+# Ejercicio 3 - Relacion 2
+#
+
+class Sala
+
+  def Initialize(el_numero, el_nombre, la_capacidad)
+
+    @numero=el_numero
+    @nombre=el_nombre
+    @capacidad=la_capacidad
+    @butacas[]
+
+  end
+
+  def obternerCapacidad
+    @capacidad
+  end
+
+  def siguienteButacaLibre(el_indice)
+    @butacas[el_indice]
+  end
+
+
+end
+
+class Evento
+
+  def Initialize(el_nombre, el_dia)
+
+  end
+
+end

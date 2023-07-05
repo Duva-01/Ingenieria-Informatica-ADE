@@ -1,0 +1,7 @@
+[
+    { "_id":"000000000J", "nombre":"Almacen1", "direccion":"C/ Camino Ronda Nº 6", "tamanio":1100},
+    {"_id":"000000000M","nombre":"Almacen2", "direccion":"C/ Recogidas Nº 22", "tamanio":1400},
+    {"_id":"000000000T","nombre":"Almacen3", "direccion":"C/ Doctor Oloriz Nº 39", "tamanio":990},
+    {"_id":"000000000S","nombre":"Almacen4", "direccion":"C/ Padre Marcelino Nº 2", "tamanio":1800},
+    {"_id":"000000000P","nombre":"Almacen5", "direccion":"C/ San Agustin Nº 44", "tamanio":3300}
+]

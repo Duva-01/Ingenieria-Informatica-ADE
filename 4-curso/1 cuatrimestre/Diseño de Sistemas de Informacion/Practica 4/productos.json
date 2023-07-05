@@ -1,0 +1,7 @@
+[
+    {"_id":"000001X", "Nombre":"Fidget Spinner", "Stock":0, "IdentificadorAlmacen":"000000000J"},
+    {"_id":"000002B", "Nombre":"Peonza", "Stock":0, "IdentificadorAlmacen":"000000000M"},
+    {"_id":"000012Z", "Nombre":"BleyBlade", "Stock":0, "IdentificadorAlmacen":"000000000T"},
+    {"_id":"000011L", "Nombre":"Domino", "Stock":0, "IdentificadorAlmacen":"000000000S"},
+    {"_id":"000031W", "Nombre":"Parchis", "Stock":0, "IdentificadorAlmacen":"000000000P"}
+]

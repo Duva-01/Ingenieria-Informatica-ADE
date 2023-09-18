@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+{{ parent() }} - {{ cientifico.nombre }}
+{% endblock %}
+
+{% block header %}Seccion administrativa{% endblock %}
+
+{% block principal %}
+
+<head>
+
+    <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+    <link href="/css/styles_principal.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles_cientifico.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles_cientifico_modificar.css" rel="stylesheet" type="text/css">
+
+</head>
+
+{% if usuario.rol == "Super-admin" or usuario.rol == "Gestor" %}
+
+<section id="seccionAdminCientificos">
+
+    <h2>(Solo administrador y gestor) Añadir cientificos</h2>
+
+    <form id="formularioCientificos" action="../administracion/adminCientificos.php" method="post"
+        enctype="multipart/form-data">
+        <div class="formularioCientificosCampos">
+            <label for="nombre">Nombre del científico:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required><br>
+
+            <label for="muerte">Fecha de fallecimiento:</label>
+            <input type="date" id="muerte" name="muerte"><br>
+
+            <label for="ciudad">Ciudad de nacimiento:</label>
+            <input type="text" id="ciudad" name="ciudad" required><br>
+
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+
+            <label for="publicado">Publicado:</label>
+            <select id="publicado" name="publicado">
+                <option value="true" {% if cientifico.publicado == true %} selected{% endif %}>True</option>
+                <option value="false" {% if cientifico.publicado == false %} selected{% endif %}>False</option>
+            </select><br>
+        </div>
+
+        <div id="formularioCientificosBibliografia">
+            <label for="bibliografia">Bibliografía:</label>
+            <textarea id="bibliografia" name="bibliografia" rows="30" cols="30"></textarea><br>
+        </div>
+
+        <input class="botonAdminCientifico" type="submit" name="añadir" value="Añadir">
+
+    </form>
+
+</section>
+
+<section id="seccionAdminCientificos">
+
+    <h2>(Solo administrador y gestor) Modificar/Eliminar Cientificos</h2>
+
+    <form id="formularioCientificos" action="../administracion/adminCientificos.php" method="post"
+        enctype="multipart/form-data">
+
+        <div class="formularioCientificosCampos">
+
+            <label for="id_c">ID del científico:</label>
+            <input type="number" id="id_c" name="id_c" value="{{cientifico.id}}" required>
+            <br>
+            <label for="nombre">Nombre del científico:</label>
+            <input type="text" id="nombre" name="nombre" value="{{cientifico.nombre}}" required><br>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" value="{{cientifico.nacimiento}}" required><br>
+
+            <label for="muerte">Fecha de fallecimiento:</label>
+            <input type="date" id="muerte" name="muerte" value="{{cientifico.muerte}}"><br>
+
+            <label for="ciudad">Ciudad de nacimiento:</label>
+            <input type="text" id="ciudad" name="ciudad" value="{{cientifico.ciudad}}" required><br>
+
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+
+            <label for="publicado">Publicado:</label>
+            
+            <select id="publicado" name="publicado">
+                <option value="true" {% if cientifico.publicado == true %} selected{% endif %}>True</option>
+                <option value="false" {% if cientifico.publicado == false %} selected{% endif %}>False</option>
+            </select><br>
+
+        </div>
+
+        <div id="formularioCientificosBibliografia">
+            <label for="bibliografia">Bibliografía:</label>
+            <textarea id="bibliografia" name="bibliografia" rows="30" cols="30" >{{cientifico.bibliografia}}</textarea><br>
+        </div>
+
+        <div id="botonesAdminModificarEliminar">
+            <input type="submit" name="modificar" value="Modificar">
+            <input type="submit" name="eliminar" value="Eliminar">
+        </div>
+
+    </form>
+
+</section>
+
+<!-- Formulario de búsqueda -->
+<section id="seccionHashtags">
+
+    <h2>Añadir/Eliminar Hashtags</h2>
+    
+    <form class="formularioHashTags" action="../administracion/adminCientificos.php" method="post"
+        enctype="multipart/form-data">
+
+
+            <label for="idHashtag">ID del científico:</label>
+            <input type="number" id="idHashtag" name="idHashtag" value="{{cientifico.id}}" required>
+
+            <label for="hashtag">Hashtag: </label>
+            <input type="text" id="hashtag" name="hashtag" placeholder="Escriba el hashtag..."><br><br>
+
+            <input type="submit" name="añadirHashtag" value="Añadir">
+            <input type="submit" name="eliminarHashtag" value="Eliminar">
+
+    </form>
+
+</section>
+
+<section id="seccionBusquedaCientificos">
+
+    <h2>Busqueda de cientificos</h2>
+
+    <div id="formulariosBusqueda">
+
+        <form class="formularioBusquedaCientificos" action="../administracion/adminCientificos.php" method="post"
+        enctype="multipart/form-data">
+
+            <strong> Buscar por nombre:</strong>
+            <input type="text" id="filtroNombre" name="filtroNombre" placeholder="Buscar científicos..."><br><br>
+            <input type="submit" name="busquedaNombre" value="Buscar Nombre">
+
+        </form>
+        
+        <form class="formularioBusquedaCientificos" action="../administracion/adminCientificos.php" method="post"
+            enctype="multipart/form-data">
+
+            <strong> Buscar por Hashtag: </strong>
+            <input type="text" id="filtroHashtag" name="filtroHashtag" placeholder="Buscar Hashtag..."><br><br>
+            <input type="submit" name="busquedaHashtag" value="Buscar Hashtag">
+
+        </form>
+
+    </div>
+    
+
+    <h2>Listado de científicos</h2>
+    <!-- Listado de científicos -->
+    <div id="listaCientificosFiltrados">
+        
+        <ul>
+            {% for cientifico_aux in lista_cientificos_filtrados %}
+            <li><a href="./cientifico/{{ cientifico_aux.id }}">{{ cientifico_aux.nombre }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</section>
+
+
+{% endif %}
+
+{% endblock %}

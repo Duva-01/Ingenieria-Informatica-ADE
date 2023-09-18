@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+    {% block titulo %}
+        {{ parent() }} - {{ cientifico.nombre }}
+    {% endblock %}
+
+    {% block header %}La historia de {{ cientifico.nombre }}{% endblock %}
+
+    {% block principal %}
+
+    <head>
+
+        <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+        <link href="/css/styles_principal.css" rel="stylesheet" type="text/css">
+        <link href="/css/styles_cientifico.css" rel="stylesheet" type="text/css">
+        
+        <script src="/js/pruebas.js" defer></script>
+        <script src="/js/carrusel.js" defer></script>
+
+    </head>
+
+        <div class="wrapperPrincipal">
+
+            <main class="wrapperCientifico">
+
+                <section id="infoCientifico">
+
+                    {% if usuario.rol == "Super-admin" or usuario.rol == "Gestor" %}
+                        <button type="submit" class="botonAdmin"><a href="/cientifico/{{ cientifico.id }}/modificarCientifico">Modificar</a></button>
+                    {% endif %}
+
+                    <article id="textoCientifico">
+                        
+                        <h1>{{ cientifico.nombre }}</h1>
+                        <h3>{{cientifico.nacimiento}} - {{cientifico.muerte}}</h3>
+                        <h3>{{cientifico.ciudad}}</h3>
+    
+                        <p>{{cientifico.bibliografia}}</p>
+                    
+                    </article> 
+                    
+                </section>
+
+                <h3>Hashtags: </h3>
+                {% for hashtag in hashtags %}            
+                    {{hashtag}}
+                {% endfor %}
+
+                <div class="carrusel">
+
+                    <h3>Carrusel de imagenes para {{ cientifico.nombre }}</h3>
+                    <div id="imagenesCarrusel">
+
+                        {% for imagen in imagenes %}
+                        
+                            <img class="carrusel-imagen" src="{{imagen.enlace}}" alt="hola"/>
+                        
+                        {% endfor %}
+                    
+                    </div>
+                    
+                    <div id="botonesCarrusel">
+                        <button id="boton-anterior" class="carrusel-boton">Anterior</button>
+                        <button id="boton-siguiente" class="carrusel-boton">Siguiente</button>
+                    </div>
+                    
+                </div>  
+
+
+                <nav id="enlacesCuerpo">
+
+                    <form> 
+                        <button type="submit"  formaction="https://es-es.facebook.com/" class="botonEnlace"> Facebook </button>
+                        <button type="submit"  formaction="https://twitter.com/?lang=es" class="botonEnlace"> Twitter </button>
+                        <button type="submit" class="botonEnlace"><a id="botonImprimir" href="/cientifico/{{ cientifico.id }}/imprimir">Imprimir</a></button>
+                    </form>
+                </nav>
+                
+                
+                
+            </main>
+
+            <section class="elementosAuxiliares">
+
+                <nav class="enlaceInteres">
+
+                    <a href="https://www.educapeques.com/lectura-para-ninos/grandes-personajes-de-la-historia/marie-curie.html">
+                        <h3>Marie Curie: La científica pionera de la radiactividad</h3>
+                    </a>
+                    
+                    <p> Hoy vamos a hablar sobre una de las científicas más famosas e importantes de la historia: Marie Curie. Marie Curie nació en Polonia en 1867 y se convirtió en una pionera en el campo de la radiactividad.</p>
+                </nav>
+
+                <nav class="enlaceInteres">
+                    
+                    <a href="https://www.mundodeportivo.com/uncomo/educacion/articulo/las-mujeres-mas-importantes-en-la-historia-53247.html">
+                        <h3>Las mujeres más importantes en la historia</h3>
+                    </a>
+                    <p>A lo largo de los siglos, las mujeres han tenido un papel decisivo en múltiples campos aunque, en demasiadas ocasiones, su aportación no haya sido reconocida. En las distintas ramas de la ciencia, de la medicina, de la investigación, así como en el arte, en la filosofía o en cualquier otro sector, las mujeres han estado presentes y algunas han conseguido destacar como grandes figuras en facetas determinadas donde han dejado huella.</p>
+                    <button type="submit"  onclick="" class="botonEnlace" id="botonComentario"> Comentarios </button>
+                </nav>
+            </section>
+
+        </div>
+
+        <div id="palabrasProhibidas" data-palabras-prohibidas="{{palabrasProhibidas|json_encode}}"></div>
+
+        <section id="seccionComentario">
+
+            <section id="comentariosEnviados">
+                
+                {% set contador = 1 %}
+                {% for coment in comentarios %}
+                    <div class="comentario">
+
+                        {% if usuario.rol == "Super-admin" or usuario.rol == "Moderador" %}
+
+                            <button type="submit" class="botonAdmin"><a href="/cientifico/{{ cientifico.id }}/modificarComentario/{{ coment.id }}">Modificar</a></button>
+                            
+                            <form  action="../administracion/adminComentarios.php" method="post"
+                                enctype="multipart/form-data">
+
+                                <input type="hidden" id="idCientificoComentario" name="idCientificoComentario" value="{{cientifico.id}}" readonly required>
+                                <input type="hidden" id="idComentario" name="idComentario" value="{{coment.id}}" readonly required>
+                                
+                                <input type="submit" id="borrarComentario" name="borrarComentario" value="Borrar">                              
+
+                            </form>
+
+                        {% endif %}
+
+                        <h3>{{coment.nombre}} {{coment.email}} {{coment.fecha}}</h3>
+                        <p>{{coment.comentario}}</p>
+                    </div>
+                    {% set contador = contador + 1 %}
+                {% endfor %}
+
+            </section>
+
+            {% if usuario %}
+
+                <form id="formularioComentario" action="../administracion/adminComentarios.php" method="post"
+                enctype="multipart/form-data">
+        
+                    <input type="hidden" id="idCientificoComentario" name="idCientificoComentario" value="{{cientifico.id}}" readonly required>
+
+                    <label for="nombreFormulario" id="labelTextoFormulario"> Nombre:</label>
+                    <input type="text" id="nombreFormulario" name="nombreFormulario" value="{{usuario.usuario}}" readonly required>
+                    <br><br>
+
+                    <label for="emailFormulario" id="labelTextoFormulario">E-mail:</label>
+                    <input type="text" id="emailFormulario" name="emailFormulario" value="{{usuario.correo}}"   required>
+                    <br><br>
+
+                    <label for="textoComentario">Comentario:</label>
+                    <textarea id="textoComentario" name="textoComentario"></textarea>
+                    
+                    <br><br>
+                    <input type="hidden" name="enviarComentario" value="1">
+                    
+                    <input id="botonEnviar" type="button" name="enviarComentario" value="Enviar">
+                    
+                </form>
+
+            {% endif %}
+
+        </section>
+    
+    {% endblock %}
+

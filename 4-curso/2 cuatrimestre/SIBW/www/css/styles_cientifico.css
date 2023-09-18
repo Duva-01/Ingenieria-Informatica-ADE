@@ -1,0 +1,192 @@
+
+
+/*------------------------------------------------------------------------*/
+/* Estilo auxiliar para cientifico */
+
+.wrapperCientifico {
+    grid-column: 1/4;
+    
+    background-color: rgb(120, 222, 120);
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    width: 75%;
+    grid-template-rows: repeat(1, 1fr);
+    display: grid;
+  justify-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapperCientifico {
+        display: block;
+        margin: 0.2em;
+        width: fit-content;
+      }
+}
+
+/*------------------------------------------------------------------------*/
+
+#infoCientifico{
+    margin: 1em;
+}
+
+.descripcionCientifico{
+    text-align: center;
+}
+
+#enlacesCuerpo{
+    width: 100%;
+    height: 2em;
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+}
+
+.botonEnlace {
+    
+    margin: 0.4em;
+    font-size: 1.2em;
+  
+}
+
+#botonImprimir{
+    
+    color: black;
+    text-decoration: none;
+  
+}
+
+#botonComentario{
+
+    display: block;
+    margin: auto;
+}
+
+/*------------------------------------------------------------------------*/
+
+#seccionComentario{
+
+    padding: 22px;
+    margin: 1em 0em 1em 0em;
+    background-color:  rgb(120, 222, 120);
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+#formularioComentario{
+
+    padding: 10px;
+    display: block;
+    background-color:  rgb(176, 251, 176);
+    border: 3px solid  rgb(8, 69, 8);
+}
+
+#comentariosEnviados{
+    grid-column: 1/4;  
+}
+
+.comentario {
+
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid  rgb(8, 69, 8);
+    background-color: rgb(176, 251, 176);
+}
+
+#palabrasProhibidas{
+    display: none;
+}
+
+/*------------------------------------------------------------------------*/
+
+.carrusel {
+    display: grid;
+    grid-auto-rows: min-content; /* Ajusta la altura de las filas según el contenido */
+    grid-gap: 10px;
+    justify-items: center;
+    width: 80%;
+    
+    background-color: rgb(176, 251, 176);
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+    margin: 5em;
+   grid-template-rows: repeat(3, auto);
+  }
+  
+.carrusel-imagen {
+    display: none;
+}
+
+/* Estilo para la imagen activa en el carrusel */
+.carrusel-imagen.active {
+    display: block;
+    width: 15em;
+    height: 10em;
+    margin: 1em;
+}
+
+.carrusel-boton {
+    /* Ajusta el estilo de los botones según tus preferencias */
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+#imagenesCarrusel{
+    grid-row: 2;
+    background-color: rgb(176, 251, 176);
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+}
+
+#botonesCarrusel{
+    grid-row:3;
+    margin: 2em;
+}
+
+h3.carrusel{
+    grid-row: 1;
+}
+
+/*------------------------------------------------------------------------*/
+
+.botonAdmin{
+
+    margin: 1em;
+    float: right;
+    background-color: aqua;
+}
+
+#borrarComentario {
+
+    margin: 1em;
+    float: right;
+    background-color: rgb(236, 158, 158);
+}
+
+#borrarComentario a{
+
+    text-decoration: none;
+    color: rgb(237, 20, 20);
+}
+
+.botonAdmin a{
+
+    text-decoration: none;
+}
+
+
+/* Podemos crear pseudo-clases, por ejemplo, cuando pasemos el raton sobre un elemento 
+
+p:hover {
+    background-color: grey;
+}
+*/

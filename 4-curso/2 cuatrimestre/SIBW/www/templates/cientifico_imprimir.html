@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+    {% block titulo %}
+        {{ parent() }} - {{ cientifico.nombre }}
+    {% endblock %}
+
+    {% block header %}{% endblock %}
+
+    {% block principal %}
+
+    <head>
+        <title>Practica 1</title>
+
+        <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+        <link href="/css/styles_principal.css" rel="stylesheet" type="text/css">
+        <link href="/css/styles_cientifico.css" rel="stylesheet" type="text/css">
+        <link href="/css/styles_cientifico_imprimir.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+        <div class="wrapperPrincipal">
+
+            <main class="wrapperCientificoImprimir">
+
+                <section id="infoCientifico">
+
+                    <div class="fotoCientifico">
+                        <img src="/images/{{ cientifico.nombre }}.jpg" alt="Avatar">
+    
+                        <div class="descripcionCientifico">
+                          <p>Retrato {{cientifico.nombre}}</p>
+                        </div>
+                    </div>
+    
+                    <div class="fotoCientifico">
+                        <img src="/images/{{ cientifico.nombre }}2.jpg" alt="Avatar">
+    
+                        <div class="descripcionCientifico">
+                          <p>{{cientifico.nombre}} (Posando)</p>
+                        </div>
+                    </div>
+
+                    <article id="textoCientifico">
+                    
+                        <h1>{{ cientifico.nombre }}</h1>
+                        <h3>{{cientifico.nacimiento}} - {{cientifico.muerte}}</h3>
+                        <h3>{{cientifico.ciudad}}</h3>
+    
+                        <p>{{cientifico.bibliografia}}</p>
+                    
+                    </article> 
+
+                </section>
+                
+
+                <nav id="enlacesCuerpo">
+
+                    <form target="_blank"> 
+                        <button type="submit"  formaction="https://es-es.facebook.com/" class="botonEnlace"> Facebook </button>
+                        <button type="submit"  formaction="https://twitter.com/?lang=es" class="botonEnlace"> Twitter </button>
+                        <button type="submit"  formaction="./cientifico_imprimir.html" class="botonEnlace"> Imprimir </button>
+                        
+                       
+                    </form>
+
+                </nav>
+
+            <section class="elementosAuxiliares">
+
+                <nav class="enlaceInteres">
+
+                    <a href="https://www.educapeques.com/lectura-para-ninos/grandes-personajes-de-la-historia/marie-curie.html">
+                        <h3>Marie Curie: La científica pionera de la radiactividad</h3>
+                    </a>
+                    
+                    <p> Hoy vamos a hablar sobre una de las científicas más famosas e importantes de la historia: Marie Curie. Marie Curie nació en Polonia en 1867 y se convirtió en una pionera en el campo de la radiactividad.</p>
+                </nav>
+
+                <nav class="enlaceInteres">
+                    
+                    <a href="https://www.mundodeportivo.com/uncomo/educacion/articulo/las-mujeres-mas-importantes-en-la-historia-53247.html">
+                        <h3>Las mujeres más importantes en la historia</h3>
+                    </a>
+                    <p>A lo largo de los siglos, las mujeres han tenido un papel decisivo en múltiples campos aunque, en demasiadas ocasiones, su aportación no haya sido reconocida. En las distintas ramas de la ciencia, de la medicina, de la investigación, así como en el arte, en la filosofía o en cualquier otro sector, las mujeres han estado presentes y algunas han conseguido destacar como grandes figuras en facetas determinadas donde han dejado huella.</p>
+                </nav>
+            </section>
+
+        </div>
+
+        {% endblock %}
+
+

@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block principal %}
+
+<head>
+    <title>Practica 1</title>
+
+    <!-- Enlazamos nuestro archivo css con nuestra pagina html -->
+    <link href="/css/styles_principal.css" rel="stylesheet" type="text/css">
+    <script src="/js/buscador.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<!-- El cuerpo de nuestra pagina web -->
+
+<body>
+
+    <section id="buscadorCientifico">
+        <h2>Buscar cientificos:</h2>
+
+        {% if usuario.rol == "Super-admin" or usuario.rol == "Gestor" %}
+            <input type="text" id="buscadorAdmin" placeholder="Buscar científicos">
+
+            <div id="resultadosBusqueda">
+                <table id="tablaResultados">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Nacimiento</th>
+                            <th>Muerte</th>
+                            <th>Ciudad</th>
+                            <th>Publicado</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        {% else %}
+
+            <input type="text" id="buscador" placeholder="Buscar científicos">
+
+                <div id="resultadosBusqueda">
+                    <table id="tablaResultados">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Nacimiento</th>
+                                <th>Muerte</th>
+                                <th>Ciudad</th>
+                                <th>Publicado</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+        {% endif %}
+
+    </section>
+
+    <div class="wrapperPrincipal">
+
+        <main class="wrapperCuerpo">
+
+            {% if usuario.rol == "Super-admin" or usuario.rol == "Gestor" %}
+        
+                {% set contador = 0 %}
+                {% for cientifico in Cientificos %}
+        
+                    <div class="cartaCientifico">
+                        <a href="/cientifico/{{ cientifico.id }}">
+                            <img src="{{lista_imagenes[contador].enlace}}" alt="Avatar">
+                            <div class="descripcionCientifico">
+                                <p>{{ cientifico.nombre }}</p>
+                            </div>
+                        </a>
+                    </div>
+                    {% set contador = contador + 1 %}
+        
+                {% endfor %}
+        
+                <div class="cartaCientifico">
+                    <a href="/cientifico/1/modificarCientifico">
+                        <div class="descripcionCientifico">
+                            <p>Añadir cientifico</p>
+                        </div>
+                    </a>
+                </div>
+        
+            {% else %}
+        
+                {% set contador = 0 %}
+                {% for cientifico in Cientificos %}
+        
+                    {% if cientifico.publicado == true %}
+                        <div class="cartaCientifico">
+                            <a href="/cientifico/{{ cientifico.id }}">
+                                <img src="{{lista_imagenes[contador].enlace}}" alt="Avatar">
+                                <div class="descripcionCientifico">
+                                    <p>{{ cientifico.nombre }}</p>
+                                </div>
+                            </a>
+                        </div>
+                        {% set contador = contador + 1 %}
+                    {% endif %}
+        
+                {% endfor %}
+        
+            {% endif %}
+        
+        </main>
+        
+
+        <section class="elementosAuxiliares">
+
+            <nav class="enlaceInteres">
+
+                <a
+                    href="https://elpais.com/espana/andalucia/2023-02-28/la-gran-oportunidad-para-el-despegue-definitivo.html">
+                    <h3>La gran oportunidad para el despegue definitivo de Andalucía</h3>
+                </a>
+
+                <p>Los fondos europeos suponen un impulso para el cambio del tejido empresarial hacia la sostenibilidad
+                    y la digitalización</p>
+            </nav>
+
+            <nav class="enlaceInteres">
+
+                <a
+                    href="https://elpais.com/espana/andalucia/2023-02-28/el-laboratorio-aereo-a-la-vanguardia-en-europa-se-fabrica-en-sevilla.html">
+                    <h3>El laboratorio aéreo a la vanguardia en Europa se fabrica en Sevilla</h3>
+                </a>
+                <p>Airbus ultima su C2955, la nueva plataforma aérea de investigación que el INTA utilizará para
+                    estudios pioneros en formación de hielo, teledetección o evaluación de la salud estructural de los
+                    aviones</p>
+            </nav>
+        </section>
+
+    </div>
+
+</body>
+
+{% endblock %}

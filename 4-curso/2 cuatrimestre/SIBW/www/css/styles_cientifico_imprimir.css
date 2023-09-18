@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------------*/
+/* Version Imprimir */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapperCientificoImprimir {
+    grid-column: 1/5;
+    
+    background-color: rgb(120, 222, 120);
+    border-radius: 2em 2em 2em 2em;
+    border: 3px solid  rgb(8, 69, 8);
+
+    grid-template-rows: repeat(1, 1fr);
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: white;
+}
+
+footer{
+    background-color: white;
+}
+
+.fotoCientifico{
+    background-color: white;
+}
+
+#menuCabecera{
+    display: none;
+}
+
+#enlacesCuerpo{
+    display: none;
+}
+
+.elementosAuxiliares{
+    display: none;
+}
+
+.fotoCientifico {
+   float: right;
+}
+
+.fotoCientifico img{
+    display: block;
+    width: 15em;
+    height: 10em;
+    margin: 1em;
+}
+
+#modificarUsuario{
+    display: none;
+}
+
+.sesionUsuario{
+    display: none;
+}
+
+/* Podemos crear pseudo-clases, por ejemplo, cuando pasemos el raton sobre un elemento 
+
+p:hover {
+    background-color: grey;
+}
+*/

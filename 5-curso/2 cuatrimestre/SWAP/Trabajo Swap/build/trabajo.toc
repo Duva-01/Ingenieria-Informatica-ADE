@@ -1,0 +1,32 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{}%
+\contentsline {section}{\numberline {2}Antecedentes o preliminares}{4}{}%
+\contentsline {section}{\numberline {3}Objetivos}{6}{}%
+\contentsline {section}{\numberline {4}Infraestructura subyacente de las plataformas de streaming}{7}{}%
+\contentsline {section}{\numberline {5}Desarrollo de las infraestructuras de distintas plataformas}{9}{}%
+\contentsline {subsection}{\numberline {5.1}Netflix}{9}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Diseño de alto nivel}{9}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Arquitectura de microservicios de Netflix}{10}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}Diseño de bajo nivel del sistema}{11}{}%
+\contentsline {subsubsection}{\numberline {5.1.4}Diseño de base de datos del sistema}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Amazon Prime Video}{15}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}¿Qué debe ofrecer Amazon Prime Video?}{15}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Diseño de bajo nivel del sistema}{16}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Diseño de alto nivel del sistema}{17}{}%
+\contentsline {subsubsection}{\numberline {5.2.4}Arquitectura de microservicios}{18}{}%
+\contentsline {subsubsection}{\numberline {5.2.5}Más allá de los microservicios}{19}{}%
+\contentsline {subsection}{\numberline {5.3}Youtube}{23}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}¿Cómo consigue YouTube almacenar tanta cantidad de información por segundo sin desbordarse?}{23}{}%
+\contentsline {subsubsection}{\numberline {5.3.2}Servicio Maestro-Esclavo replica}{24}{}%
+\contentsline {subsubsection}{\numberline {5.3.3}Sharding}{24}{}%
+\contentsline {subsubsection}{\numberline {5.3.4}¿Qué es Vitess?}{25}{}%
+\contentsline {subsubsection}{\numberline {5.3.5}¿Cómo consigue resiliencia Vitess?}{25}{}%
+\contentsline {subsubsection}{\numberline {5.3.6}Escalabilidad con Vitess}{26}{}%
+\contentsline {subsubsection}{\numberline {5.3.7}CDN}{26}{}%
+\contentsline {subsubsection}{\numberline {5.3.8}Video Transcoding}{26}{}%
+\contentsline {subsubsection}{\numberline {5.3.9}YouTube's Video Delivery Architecture}{27}{}%
+\contentsline {section}{\numberline {6}Comparación de las infraestructuras de distintas plataformas}{28}{}%
+\contentsline {subsection}{\numberline {6.1}Similitudes en las infraestructuras de Netflix, Amazon Prime Video y YouTube}{28}{}%
+\contentsline {subsection}{\numberline {6.2}Diferencias en las infraestructuras de Netflix, Amazon Prime Video y YouTube}{29}{}%
+\contentsline {section}{\numberline {7}Conclusiones}{30}{}%
+\contentsline {section}{\numberline {8}Bibliografía}{31}{}%

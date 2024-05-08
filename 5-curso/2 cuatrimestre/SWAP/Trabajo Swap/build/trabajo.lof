@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Infraestructura general de Netflix}}{10}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Arquitectura de Microservicios de Netflix}}{10}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Transcodificación de los videos originales}}{11}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Equilibrador de Carga Elástico (ELB)}}{12}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Configuración maestro-maestro de MySQL}}{13}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Configuración Cassandra}}{14}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de casos de uso de Amazon Prime Video}}{15}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Diseño de bajo nivel de Amazon Prime Video}}{16}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Diseño de alto nivel de Amazon Prime Video}}{17}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Esquema de la arquitectura de microservicios de Amazon Video}}{18}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Arquitectura de un sistema monolito}}{20}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Arquitectura inicial del sistema de detección de defectos}}{20}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Arquitectura final del servicio de detección de defectos}}{21}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Arquitectura Youtube}}{23}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Maestro-Maestro Youtube}}{24}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Sharding Youtube}}{25}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Escalabilidad con Vitess Youtube}}{26}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Video Delivery Youtube}}{27}{}%

@@ -1,0 +1,439 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.16)  30 APR 2024 09:47
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"d:/Usuario/Desktop/David/Inf + Ade/Carrera/5-curso/2 cuatrimestre/SWAP/Trabajo Swap/trabajo.tex"
+(d:/Usuario/Desktop/David/Inf + Ade/Carrera/5-curso/2 cuatrimestre/SWAP/Trabajo Swap/trabajo.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-07> (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count193
+)) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count194
+\float@exts=\toks19
+\float@box=\box51
+\@float@everytoks=\toks20
+\@floatcapt=\box52
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count195
+\U@D=\dimen143
+\l@unhyphenated=\language79
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count196
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks21
+\es@quotdepth=\count197
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks22
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
+\l__pdf_internal_box=\box53
+) (d:\Usuario\Desktop\David\Inf + Ade\Carrera\5-curso\2 cuatrimestre\SWAP\Trabajo Swap\build\trabajo.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+\openout1 = `trabajo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen152
+\scratchbox=\box54
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen153
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks24
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<./img/logo.png, id=1, 368.577pt x 337.26pt>
+File: ./img/logo.png Graphic file (type png)
+<use ./img/logo.png>
+Package pdftex.def Info: ./img/logo.png  used on input line 33.
+(pdftex.def)             Requested size: 318.66948pt x 291.60237pt.
+[1
+
+{C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/logo.png>] (d:\Usuario\Desktop\David\Inf + Ade\Carrera\5-curso\2 cuatrimestre\SWAP\Trabajo Swap\build\trabajo.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
+)
+\tf@toc=\write3
+\openout3 = `trabajo.toc'.
+
+ [1] (d:\Usuario\Desktop\David\Inf + Ade\Carrera\5-curso\2 cuatrimestre\SWAP\Trabajo Swap\build\trabajo.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write4
+\openout4 = `trabajo.lof'.
+
+ [2] [3] [4] [5] [6]
+Overfull \hbox (16.40392pt too wide) in paragraph at lines 106--106
+[]\T1/cmr/bx/n/17.28 Infraestructura sub-ya-cen-te de las pla-ta-for-mas de strea-
+ []
+
+[7] [8] [9]
+<./img/infraestructura_netflix.png, id=43, 560.0925pt x 353.52075pt>
+File: ./img/infraestructura_netflix.png Graphic file (type png)
+<use ./img/infraestructura_netflix.png>
+Package pdftex.def Info: ./img/infraestructura_netflix.png  used on input line 159.
+(pdftex.def)             Requested size: 364.19667pt x 229.88286pt.
+<./img/arquitectura_microservicios_netflix.png, id=44, 507.0945pt x 230.66174pt>
+File: ./img/arquitectura_microservicios_netflix.png Graphic file (type png)
+<use ./img/arquitectura_microservicios_netflix.png>
+Package pdftex.def Info: ./img/arquitectura_microservicios_netflix.png  used on input line 173.
+(pdftex.def)             Requested size: 364.19667pt x 165.67155pt.
+ [10 <./img/infraestructura_netflix.png> <./img/arquitectura_microservicios_netflix.png>]
+<./img/transcodificacion_netflix.png, id=50, 502.87875pt x 178.266pt>
+File: ./img/transcodificacion_netflix.png Graphic file (type png)
+<use ./img/transcodificacion_netflix.png>
+Package pdftex.def Info: ./img/transcodificacion_netflix.png  used on input line 192.
+(pdftex.def)             Requested size: 364.19667pt x 129.10487pt.
+ [11 <./img/transcodificacion_netflix.png>]
+<./img/equilibrador_carga_elastico_netflix.png, id=55, 504.08325pt x 221.02576pt>
+File: ./img/equilibrador_carga_elastico_netflix.png Graphic file (type png)
+<use ./img/equilibrador_carga_elastico_netflix.png>
+Package pdftex.def Info: ./img/equilibrador_carga_elastico_netflix.png  used on input line 205.
+(pdftex.def)             Requested size: 364.19667pt x 159.69489pt.
+<./img/maestro_maestro_mysql.png, id=56, 487.8225pt x 225.84375pt>
+File: ./img/maestro_maestro_mysql.png Graphic file (type png)
+<use ./img/maestro_maestro_mysql.png>
+Package pdftex.def Info: ./img/maestro_maestro_mysql.png  used on input line 220.
+(pdftex.def)             Requested size: 364.19667pt x 168.61046pt.
+ [12 <./img/equilibrador_carga_elastico_netflix.png>]
+<./img/cassandra_netflix.png, id=62, 461.92575pt x 232.4685pt>
+File: ./img/cassandra_netflix.png Graphic file (type png)
+<use ./img/cassandra_netflix.png>
+Package pdftex.def Info: ./img/cassandra_netflix.png  used on input line 233.
+(pdftex.def)             Requested size: 364.19667pt x 183.28983pt.
+ [13 <./img/maestro_maestro_mysql.png>] [14 <./img/cassandra_netflix.png>]
+<./img/diagrama_casos_amazon.png, id=71, 506.49225pt x 179.4705pt>
+File: ./img/diagrama_casos_amazon.png Graphic file (type png)
+<use ./img/diagrama_casos_amazon.png>
+Package pdftex.def Info: ./img/diagrama_casos_amazon.png  used on input line 259.
+(pdftex.def)             Requested size: 364.19667pt x 129.05434pt.
+<./img/bajo_nivel_amazon.png, id=72, 505.89pt x 172.84575pt>
+File: ./img/bajo_nivel_amazon.png Graphic file (type png)
+<use ./img/bajo_nivel_amazon.png>
+Package pdftex.def Info: ./img/bajo_nivel_amazon.png  used on input line 270.
+(pdftex.def)             Requested size: 364.19667pt x 124.43564pt.
+ [15 <./img/diagrama_casos_amazon.png>]
+<./img/alto_nivel_amazon.png, id=77, 522.15076pt x 272.81924pt>
+File: ./img/alto_nivel_amazon.png Graphic file (type png)
+<use ./img/alto_nivel_amazon.png>
+Package pdftex.def Info: ./img/alto_nivel_amazon.png  used on input line 287.
+(pdftex.def)             Requested size: 364.19667pt x 190.29778pt.
+ [16 <./img/bajo_nivel_amazon.png>] [17 <./img/alto_nivel_amazon.png>]
+<./img/arquitectura_microservicios_amazon.png, id=86, 523.9575pt x 230.66174pt>
+File: ./img/arquitectura_microservicios_amazon.png Graphic file (type png)
+<use ./img/arquitectura_microservicios_amazon.png>
+Package pdftex.def Info: ./img/arquitectura_microservicios_amazon.png  used on input line 312.
+(pdftex.def)             Requested size: 364.19667pt x 160.33583pt.
+ [18 <./img/arquitectura_microservicios_amazon.png>]
+<./img/monolito_amazon.png, id=92, 284.86424pt x 227.04825pt>
+File: ./img/monolito_amazon.png Graphic file (type png)
+<use ./img/monolito_amazon.png>
+Package pdftex.def Info: ./img/monolito_amazon.png  used on input line 337.
+(pdftex.def)             Requested size: 364.19667pt x 290.29855pt.
+ [19]
+<./img/deteccion_defectos_amazon.png, id=96, 428.802pt x 329.43076pt>
+File: ./img/deteccion_defectos_amazon.png Graphic file (type png)
+<use ./img/deteccion_defectos_amazon.png>
+Package pdftex.def Info: ./img/deteccion_defectos_amazon.png  used on input line 346.
+(pdftex.def)             Requested size: 364.19667pt x 279.80634pt.
+ [20 <./img/monolito_amazon.png> <./img/deteccion_defectos_amazon.png>]
+<./img/final_deteccion_fallos_amazon.png, id=102, 404.712pt x 243.91125pt>
+File: ./img/final_deteccion_fallos_amazon.png Graphic file (type png)
+<use ./img/final_deteccion_fallos_amazon.png>
+Package pdftex.def Info: ./img/final_deteccion_fallos_amazon.png  used on input line 357.
+(pdftex.def)             Requested size: 364.19667pt x 219.50319pt.
+ [21 <./img/final_deteccion_fallos_amazon.png>] [22]
+<./img/arquitectura_youtube.png, id=110, 382.42876pt x 239.09325pt>
+File: ./img/arquitectura_youtube.png Graphic file (type png)
+<use ./img/arquitectura_youtube.png>
+Package pdftex.def Info: ./img/arquitectura_youtube.png  used on input line 383.
+(pdftex.def)             Requested size: 364.19667pt x 227.7064pt.
+<./img/maestro-maestro_youtube.png, id=111, 373.395pt x 230.0595pt>
+File: ./img/maestro-maestro_youtube.png Graphic file (type png)
+<use ./img/maestro-maestro_youtube.png>
+Package pdftex.def Info: ./img/maestro-maestro_youtube.png  used on input line 408.
+(pdftex.def)             Requested size: 364.19667pt x 224.40013pt.
+ [23 <./img/arquitectura_youtube.png>]
+<./img/sharding_youtube.png, id=116, 403.5075pt x 266.1945pt>
+File: ./img/sharding_youtube.png Graphic file (type png)
+<use ./img/sharding_youtube.png>
+Package pdftex.def Info: ./img/sharding_youtube.png  used on input line 427.
+(pdftex.def)             Requested size: 364.19667pt x 240.26334pt.
+ [24 <./img/maestro-maestro_youtube.png>] [25 <./img/sharding_youtube.png>]
+<./img/escalabilidad_vitess.png, id=126, 389.65575pt x 194.52675pt>
+File: ./img/escalabilidad_vitess.png Graphic file (type png)
+<use ./img/escalabilidad_vitess.png>
+Package pdftex.def Info: ./img/escalabilidad_vitess.png  used on input line 454.
+(pdftex.def)             Requested size: 364.19667pt x 181.82814pt.
+ [26 <./img/escalabilidad_vitess.png>]
+<./img/video_delivery_youtube.png, id=131, 383.031pt x 229.45724pt>
+File: ./img/video_delivery_youtube.png Graphic file (type png)
+<use ./img/video_delivery_youtube.png>
+Package pdftex.def Info: ./img/video_delivery_youtube.png  used on input line 489.
+(pdftex.def)             Requested size: 364.19667pt x 218.1897pt.
+ [27 <./img/video_delivery_youtube.png>] [28] [29] [30]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 546.
+ (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+Underfull \hbox (badness 5359) in paragraph at lines 555--556
+[]\T1/cmr/m/n/12 Hoff, T. (2018, 10 fe-bre-ro). \T1/cmr/m/it/12 La com-ple-ja in-fra-es-truc-tu-ra de-trás de Net-
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 555--556
+\T1/cmr/m/it/12 flix: ¾qué pa-sa cuan-do le das al ^^Splay^^T?\T1/cmr/m/n/12 . Xa-ta-ka. Re-cu-pe-ra-do de $\T1/cmtt/m/n/12 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+\T1/cmtt/m/n/12 / / www\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 xataka\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 com / streaming / la -[] compleja -[] infraestructura -[] detras -[] de -[]
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 561--562
+[]\T1/cmr/m/n/12 Bhasin, A. (2024, 24 enero). \T1/cmr/m/it/12 Ex-plo-ring Ama-zon Pri-me Vi-deo's Ar-chi-tec-tu-re:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+\T1/cmtt/m/n/12 prime -[] videos -[] architecture -[] migrating -[] from -[] microservices -[] to -[] monolith -[]
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 567--568
+[]\T1/cmr/m/n/12 Ibrahim, K. (2023, 2 ju-nio). \T1/cmr/m/it/12 The Sim-ple Story of Ama-zon Pri-me Vi-deo's
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 570--571
+\T1/cmr/m/n/12 for-Geeks. Re-cu-pe-ra-do de $\T1/cmtt/m/n/12 https : / / www\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 geeksforgeeks\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 org / system -[] design -[] of -[]
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+\T1/cmtt/m/n/12 streaming / how -[] prime -[] video -[] ingests -[] processes -[] and -[] distributes -[] live -[] tv -[]
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 591--592
+[]\T1/cmr/m/n/12 Puri, V. (2023, 10 de agos-to). \T1/cmr/m/it/12 The ar-chi-tec-tu-re of the li-ve vi-deo broad-cast
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 591--592
+\T1/cmr/m/it/12 plat-form on Pri-me Vi-deo\T1/cmr/m/n/12 . In-foQ. Re-cu-pe-ra-do el 17 de abril de 2024, de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+\T1/cmtt/m/n/12 https : / / www\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 infoq\OML/cmm/m/it/12 :\T1/cmtt/m/n/12 com / news / 2023 / 10 / prime -[] video -[] availability -[] costs / # : ~ :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+\T1/cmtt/m/n/12 text = The % 20architecture % 20of % 20the % 20live\OML/cmm/m/it/12 ;[] \T1/cmtt/m/n/12 content % 20for % 20broadcast %
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 594--595
+[]\T1/cmr/m/n/12 Shivang. (2023, 17 ju-nio). \T1/cmr/m/it/12 You-Tu-be Ar-chi-tec-tu-re ^^U How does it Ser-ve High-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 594--595
+\T1/cmr/m/it/12 Quality Vi-deos With Low La-tency - Sca-le-You-rApp\T1/cmr/m/n/12 . Sca-le-You-rApp. Re-cu-pe-ra-
+ []
+
+[32] (d:\Usuario\Desktop\David\Inf + Ade\Carrera\5-curso\2 cuatrimestre\SWAP\Trabajo Swap\build\trabajo.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+) ) 
+Here is how much of TeX's memory you used:
+ 4814 strings out of 476339
+ 84498 string characters out of 5787175
+ 1863340 words of memory out of 5000000
+ 25147 multiletter control sequences out of 15000+600000
+ 522531 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,6n,67p,929b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+Output written on "d:\Usuario\Desktop\David\Inf + Ade\Carrera\5-curso\2 cuatrimestre\SWAP\Trabajo Swap\build\trabajo.pdf" (33 pages, 2182221 bytes).
+PDF statistics:
+ 580 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+

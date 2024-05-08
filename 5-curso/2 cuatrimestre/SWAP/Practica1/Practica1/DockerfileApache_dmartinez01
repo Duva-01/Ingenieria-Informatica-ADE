@@ -1,0 +1,23 @@
+# Estamos utilizando la imagen base de PHP con Apache.
+FROM php:7.4-apache
+
+# Antes de hacer cualquier cosa, siempre es una buena idea asegurarse de que nuestros paquetes estén actualizados.
+# Luego, instalamos 'iputils-ping' porque a veces necesitamos hacer ping desde nuestro contenedor para verificar conexiones.
+RUN apt-get update && \
+    apt-get install -y iputils-ping net-tools htop apache2-utils && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copiamos archivos de configuración personalizados
+# Aquí estamos tomando nuestros propios archivos de configuración y los colocamos en las ubicaciones adecuadas en el contenedor.
+COPY ./config/apache2.conf /etc/apache2/apache2.conf
+COPY ./config/security.conf /etc/apache2/conf-available/security.conf
+COPY ./config/php.ini-production /usr/local/etc/php/php.ini
+
+# Aquí copiamos nuestro código PHP desde nuestro directorio local './web_dmartinez01/' 
+# al directorio '/var/www/html/' dentro del contenedor.
+COPY ./web_dmartinez01/ /var/www/html/
+
+# Finalmente, queremos asegurarnos de que el mundo exterior pueda acceder a nuestro servidor web, 
+# así que exponemos el puerto 80 del contenedor.
+EXPOSE 80

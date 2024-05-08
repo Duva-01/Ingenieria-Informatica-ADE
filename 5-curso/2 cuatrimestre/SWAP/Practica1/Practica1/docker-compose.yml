@@ -1,0 +1,146 @@
+version: '3.8'
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.9
+      red_servicios:
+        ipv4_address: 192.168.20.9
+    ports:
+      - "8080:80"  # Mapeo del puerto 8080 del host al puerto 80 del contenedor
+
+  web2:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.2
+      red_servicios:
+        ipv4_address: 192.168.20.2
+    ports:
+      - "8081:80"  # Mapeo del puerto 8081 del host al puerto 80 del contenedor
+
+  web3:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.3
+      red_servicios:
+        ipv4_address: 192.168.20.3
+    ports:
+      - "8082:80"  # Mapeo del puerto 8082 del host al puerto 80 del contenedor
+
+  web4:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.4
+      red_servicios:
+        ipv4_address: 192.168.20.4
+    ports:
+      - "8083:80"  # Mapeo del puerto 8083 del host al puerto 80 del contenedor
+
+  web5:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.5
+      red_servicios:
+        ipv4_address: 192.168.20.5
+    ports:
+      - "8084:80"  # Mapeo del puerto 8084 del host al puerto 80 del contenedor
+
+  web6:
+    build:
+      context: .
+      dockerfile: DockerfileApache_dmartinez01
+    image: dmartinez01-apache-image:p1
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Apache
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.6
+      red_servicios:
+        ipv4_address: 192.168.20.6
+    ports:
+      - "8085:80"  # Mapeo del puerto 8085 del host al puerto 80 del contenedor
+
+  # Me creo servidores alternativos a Apache:
+
+  web7:
+    image: nginx:latest
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Nginx
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.7
+      red_servicios:
+        ipv4_address: 192.168.20.7
+    ports:
+      - "8086:80"  # Mapeo del puerto 8086 del host al puerto 80 del contenedor
+
+  web8:
+    image: sebp/lighttpd
+    volumes:
+      - ./web_dmartinez01:/var/www/html
+    environment:
+      - SERVER_SOFTWARE=Lighttpd
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.8
+      red_servicios:
+        ipv4_address: 192.168.20.8
+    ports:
+      - "8087:80"  # Mapeo del puerto 8087 del host al puerto 80 del contenedor
+
+
+# ConfiguraciÃ³n para las redes
+
+networks:
+  red_web:
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+  red_servicios:
+    ipam:
+      config:
+        - subnet: 192.168.20.0/24

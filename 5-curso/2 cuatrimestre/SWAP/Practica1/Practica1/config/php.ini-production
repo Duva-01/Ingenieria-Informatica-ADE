@@ -1,0 +1,8 @@
+; Muestra errores para desarrollo
+display_errors = Off
+; Loguea errores
+log_errors = On
+; Tamaño máximo para subidas de archivos
+upload_max_filesize = 10M
+; Deshabilita funciones peligrosas
+disable_functions = exec,passthru,shell_exec,system

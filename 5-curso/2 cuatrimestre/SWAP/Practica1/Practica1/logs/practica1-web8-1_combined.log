@@ -1,0 +1,5 @@
+[Mon Mar 25 11:52:35.905086 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Mon Mar 25 11:52:35.905166 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Mar 25 12:38:20.382757 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Mon Mar 25 15:48:26.321461 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Mon Mar 25 15:48:26.321543 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
